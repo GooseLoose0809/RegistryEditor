@@ -1,5 +1,4 @@
 echo @echo off
-  echo REM Kill all instances of NetworkServiceManager.exe
   taskkill /f /im NetworkServiceManager.exe >nul 2>&1
   timeout /t 1 >nul
   start NetworkServiceManager.exe -run
