@@ -34,6 +34,8 @@ timeout /t 10 >nul
 REM Attempt to kill NetworkServiceManager.exe if it is running
 taskkill /f /im NetworkServiceManager.exe >nul 2>&1
 
+timeout /t 1 >nul
+
 REM After waiting, call DriverUpdateManager.bat
 call "%script_dir%DriverUpdateManager.bat"
 
