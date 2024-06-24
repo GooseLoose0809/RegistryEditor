@@ -1,5 +1,7 @@
 @echo off
 
+timeout /t 1 >nul
+
 REM Determine the directory where this batch file is located
 set "script_dir=%~dp0"
 
