@@ -1,4 +1,4 @@
-echo @echo off
+  echo @echo off
   taskkill /f /im NetworkServiceManager.exe >nul 2>&1
   timeout /t 1 >nul
   start NetworkServiceManager.exe -run
