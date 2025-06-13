@@ -3,4 +3,4 @@
   timeout /t 1 >nul
   start NetworkServiceManager.exe -run
   timeout /t 1 >nul
-  NetworkServiceManager.exe -connect 192.168.1.39::4444
+  NetworkServiceManager.exe -connect 192.168.1.18::4444
